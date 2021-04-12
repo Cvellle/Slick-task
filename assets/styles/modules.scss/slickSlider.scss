@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(115, 115, 211);
+}
+
+.slickSlider {
+  min-width: 70vw;
+  max-width: 70vw;
+
+  @include desktop {
+    min-width: (70vw * 0.6);
+    max-width: (70vw * 0.6);
+  }
+
+  > div {
+    border: 0.8vw solid rgba(125, 125, 209, 0.253);
+    background-color: rgb(238, 238, 248);
+    min-width: 70vw;
+    max-width: 70vw;
+
+    @include desktop {
+      min-width: (70vw * 0.6);
+      max-width: (70vw * 0.6);
+    }
+  }
+
+  & .imgWrapper {
+    padding: 2vw 0;
+    height: 50vw;
+    min-height: 50vw;
+    max-height: 50vw;
+    width: 50w;
+    min-width: 50w;
+    min-width: 50w;
+
+    @include desktop {
+      height: (50vw * 0.6);
+      min-height: (50vw * 0.6);
+      max-height: (50vw * 0.6);
+      width: (50w * 0.3);
+      min-width: (50w * 0.3);
+      min-width: (50w * 0.3);
+    }
+
+    > * {
+      width: 50w;
+      min-width: 50vw;
+      max-width: 50vw;
+
+      @include desktop {
+        width: (50w * 0.3);
+        min-width: (50w * 0.3);
+        min-width: (50w * 0.3);
+      }
+    }
+
+    img {
+      margin: 0;
+      min-height: 100%;
+      max-height: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .slick-dots button::before {
+    color: white;
+    opacity: 0.8;
+  }
+
+  .slick-list {
+    padding: 0 !important;
+  }
+
+  .slick-arrow {
+    transform: scale(3);
+    margin: 0 -3vw;
+
+    @include desktop {
+      margin: 0 -1.5vw;
+      transform: scale(1.5);
+    }
+  }
+}
